@@ -10,7 +10,8 @@ namespace RavenDB_Demo
 {
     class Program
     {
-        static void Main(string[] args)
+        //The Old entry point
+        static void OldMain(string[] args)
         {
             var documentStore = new DocumentStore { Url = "http://localhost:8080" };
             documentStore.Initialize();
@@ -127,24 +128,5 @@ namespace RavenDB_Demo
         }
     }
 
-    public class Menu
-    {
-        public Menu()
-        {
-            Courses = new List<Course>();
-        }
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public List<Course> Courses { get; set; }
-    }
-    public class Course
-    {
-        public Course()
-        {
-            Allergenics = new List<string>();
-        }
-        public string Name { get; set; }
-        public decimal Cost { get; set; }
-        public List<string> Allergenics { get; set; }
-    }
+    
 }
