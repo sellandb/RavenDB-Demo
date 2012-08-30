@@ -18,7 +18,7 @@ namespace RavenDB_Demo
             using (var session = documentStore.OpenSession())
             {
 
-                Insert Example
+                //Insert Example
                 session.Store(new Menu
                 {
                     Name = "Breakfast Menu",
