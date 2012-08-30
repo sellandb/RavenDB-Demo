@@ -18,69 +18,69 @@ namespace RavenDB_Demo
             using (var session = documentStore.OpenSession())
             {
 
-                //Insert Example
-                //session.Store(new Menu
-                //{
-                //    Name = "Breakfast Menu",
-                //    Courses = {
-                //        new Course {
-                //            Name = "Waffle",
-                //            Cost = 2.3m,
-                //        },
-                //        new Course {
-                //            Name = "Cereal",
-                //            Cost = 1.3m,
-                //            Allergenics = {"Peanuts"}
-                //        },
-                //        new Course {
-                //            Name = "Porridge",
-                //            Cost = 1.7m,
-                //            Allergenics = {"Wheat", "Peanuts"}
-                //        }
-                //    }
-                //});
+                Insert Example
+                session.Store(new Menu
+                {
+                    Name = "Breakfast Menu",
+                    Courses = {
+                        new Course {
+                            Name = "Waffle",
+                            Cost = 2.3m,
+                        },
+                        new Course {
+                            Name = "Cereal",
+                            Cost = 1.3m,
+                            Allergenics = {"Peanuts"}
+                        },
+                        new Course {
+                            Name = "Porridge",
+                            Cost = 1.7m,
+                            Allergenics = {"Wheat", "Peanuts"}
+                        }
+                    }
+                });
 
-                //session.Store(new Menu
-                //{
-                //    Name = "Lunch Menu",
-                //    Courses = {
-                //        new Course {
-                //            Name = "Sandwich",
-                //            Cost = 4.5m,
-                //        },
-                //        new Course {
-                //            Name = "Ribs",
-                //            Cost = 11.3m,
-                //            Allergenics = {"Pork"}
-                //        },
-                //        new Course {
-                //            Name = "Chicken",
-                //            Cost = 6.7m,
-                //            Allergenics = {"Gluten"}
-                //        }
-                //    }
-                //});
+                session.Store(new Menu
+                {
+                    Name = "Lunch Menu",
+                    Courses = {
+                        new Course {
+                            Name = "Sandwich",
+                            Cost = 4.5m,
+                        },
+                        new Course {
+                            Name = "Ribs",
+                            Cost = 11.3m,
+                            Allergenics = {"Pork"}
+                        },
+                        new Course {
+                            Name = "Chicken",
+                            Cost = 6.7m,
+                            Allergenics = {"Gluten"}
+                        }
+                    }
+                });
 
-                //session.Store(new Menu
-                //{
-                //    Name = "Dinner Menu",
-                //    Courses = {
-                //        new Course {
-                //            Name = "Pizza",
-                //            Cost = 5.5m,
-                //        },
-                //        new Course {
-                //            Name = "Soup",
-                //            Cost = 2.3m,
-                //        },
-                //        new Course {
-                //            Name = "Steak",
-                //            Cost = 25.5m,
-                //            Allergenics = {"Peanuts"}
-                //        }
-                //    }
-                //});
-                //session.SaveChanges();
+                session.Store(new Menu
+                {
+                    Name = "Dinner Menu",
+                    Courses = {
+                        new Course {
+                            Name = "Pizza",
+                            Cost = 5.5m,
+                        },
+                        new Course {
+                            Name = "Soup",
+                            Cost = 2.3m,
+                        },
+                        new Course {
+                            Name = "Steak",
+                            Cost = 25.5m,
+                            Allergenics = {"Peanuts"}
+                        }
+                    }
+                });
+                session.SaveChanges();
 
                 //Example 1 (This may not have an accurate ID anymore)
                 Console.WriteLine("Example 1");
